@@ -626,5 +626,13 @@
         // Start the game
         gameLoop();
     </script>
+<script>
+document.addEventListener("touchstart", function () {
+  if (typeof shoot === "function") {
+    shoot();
+  }
+});
+</script>
+<button id="special">⚡</button>
 </body>
 </html>
